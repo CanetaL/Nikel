@@ -39,7 +39,7 @@ function checkLogged(){
     }
 
     if(!logged) {
-        window.location.href = "index.html";
+        window.location.href = "/index.html";
         return;
     }
 
@@ -56,7 +56,7 @@ function logout(){
     sessionStorage.removeItem("logged");
     localStorage.removeItem("session");
 
-    window.location.href = "index.html"
+    location.href = "/index.html"
 }
 
 function saveData(data) {

@@ -7,7 +7,7 @@ let data = {
 
 document.getElementById("button-logout").addEventListener("click", logout);
 document.getElementById("transactions-button").addEventListener("click", function(){
-    window.location.href = "transactions.html"
+    window.location.href = "/html/transactions.html"
 });
 
 //Lanças
@@ -43,7 +43,7 @@ function checkLogged(){
     }
 
     if(!logged) {
-        window.location.href = "index.html";
+        location.href = "/index.html";
         return;
     }
 
@@ -61,7 +61,7 @@ function logout(){
     sessionStorage.removeItem("logged");
     localStorage.removeItem("session");
 
-    window.location.href = "index.html"
+    location.href = "/index.html"
 }
 
 function getCashIn(){

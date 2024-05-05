@@ -27,7 +27,7 @@ document.getElementById("login-form").addEventListener("submit", function(e){
 
         saveSession(email, checkSession);
 
-        window.location.href = "home.html"; 
+        window.location.href = "/html/home.html"; 
     }
 
     
@@ -70,7 +70,7 @@ function checkLogged(){
 
     if(logged) {
         saveSession(logged, session);
-        window.location.href = "home.html";
+        window.location.href = "/html/home.html";
     }
 }
     
